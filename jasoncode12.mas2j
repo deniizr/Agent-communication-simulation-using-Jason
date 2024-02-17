@@ -1,0 +1,30 @@
+/*
+    jasoncode11
+    ---------------------------
+
+    Jason Project File
+
+    This file defines the initial state of the MAS
+
+    Jason 2.5.1
+    February 13, 2024 - 17:55:59
+*/
+
+MAS jasoncode12 {
+
+    infrastructure: Local
+
+    agents: 
+        hospital;
+
+        police;
+
+        victim;
+
+        social_service_member;
+
+        guilty;
+
+    
+
+}

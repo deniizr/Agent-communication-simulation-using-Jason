@@ -1,0 +1,37 @@
+// victim belief base and rules
+
+//beat(guilty,victim).
+//threat(guilty,victim).
+//indanger(victim).
+//hurt(guilty,victim).
+injured(guilty, victim).
+bleeding(victim).
+untrusted(guilty).
+trusted(social_service_member).
+trusted(police).
+trusted(doctor).
+
+//Y stands for guilty and Z stands for victim.
+needmedicalhelp(Z):- injured(Y,Z)| bleeding(Z).
+isunderviolence(Z):- hurt(Y,Z)| beat(Y,Z)| threat(Y,Z)|indanger(Z). 
+
+//goals
+!getHelp.
+
+
+//plans
++!getHelp : needmedicalhelp(Z) <- 
+.send(social_service_member, tell, helpNeeded(medical));
+.print("Sending medical help request to social service member\n").
+
+        
+
+		
++!getHelp :isunderviolence(victim) <-
+   
+        .send(social_service_member, tell, helpNeeded(security));
+        .print("Sending police help request to social service member\n").
+		
+		
+
+
