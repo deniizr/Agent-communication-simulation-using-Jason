@@ -1,7 +1,6 @@
 Simulation of communication of multiple agents using Jason
-Deniz Rasoulijambori
-deniizrasoulii@gmail.com
-1. A brief introduction: agents and the way they communicate:
+
+#1. A brief introduction: agents and the way they communicate:
 I would like to give an overview of what agents are, why and how they communicate, and the 
 role that agent communication plays in many applications before getting into the technical details 
 of this report. Furthermore, I will provide a summary of previous experiments conducted in this 
